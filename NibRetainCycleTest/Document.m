@@ -32,4 +32,8 @@
     return @"Document";
 }
 
+- (void)dealloc {
+    NSLog(@"dealloc called");
+}
+
 @end

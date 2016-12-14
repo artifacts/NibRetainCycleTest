@@ -9,4 +9,9 @@
 #import <Cocoa/Cocoa.h>
 
 @interface Document : NSPersistentDocument
+
+// Set this to strong and voilá - Retain Cycle.
+
+@property (nonatomic, weak) IBOutlet NSArrayController *gniechArrayController;
+
 @end
